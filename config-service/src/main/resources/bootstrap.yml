@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8888
 
 spring:
   cloud:
@@ -7,10 +7,14 @@ spring:
       server:
         git:
           uri: https://github.com/andres-orozco1/microservicesandcloud.git
-            searchPaths: config-data
-            username: ${GIT_USER}
-            password: ${GIT_PASSWORD}
+          searchPaths: config-data
+          username: ${GIT_USER}
+          password: $ {GIT_PASSWORD}
+          default-label: "main"
   security:
     user:
       name: root
       password: s3cr3t
+
+
+
